@@ -1,1 +1,21 @@
-<p>create-post works!</p>
+<div>
+    <div>
+        Create Post
+    </div>
+    <div>
+        <form [formGroup]="postForm">
+            <div>
+                <label>Name</label>
+                <input formControlName="name">
+            </div>
+            <div>
+                <label>Post</label>
+                <textarea formControlName="post" rows="3"></textarea>
+            </div>
+
+            <div>
+                <button (click)="submit()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
